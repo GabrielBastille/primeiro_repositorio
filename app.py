@@ -55,6 +55,9 @@ if nome_usuario and vai_ao_evento:
             item_selecionado = next((p for p in produtos if f"{p['nome_produto']} - Aproximadamente R$ {p['preco_medio']:.2f}" == escolha), None)
 
             if item_selecionado:
+                st.write("Segue link do produto:")
+                st.write(f"**{item_selecionado['nome_produto']}**")
+                st.write(f"Preço médio: R$ {item_selecionado['preco_medio']:.2f}")
                 st.markdown(f"[🔗 Ver produto]({item_selecionado['link_produto']})", unsafe_allow_html=True)
 
         if st.button("Confirmar resposta"):
