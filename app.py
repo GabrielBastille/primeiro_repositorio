@@ -52,7 +52,7 @@ if nome_usuario and vai_ao_evento:
         if opcoes:
             escolha = st.selectbox("Escolha seu presente:", opcoes)
 
-            item_selecionado = next((p for p in produtos if f"{p['nome_produto']} - R$ {p['preco_medio']:.2f}" == escolha), None)
+            item_selecionado = next((p for p in produtos if f"{p['nome_produto']} - Aproximadamente R$ {p['preco_medio']:.2f}" == escolha), None)
 
             if item_selecionado:
                 st.markdown(f"[🔗 Ver produto]({item_selecionado['link_produto']})", unsafe_allow_html=True)
