@@ -14,6 +14,14 @@ HEADERS = {
 }
 
 st.title("Chá de Casa Nova 🎁🏠")
+st.subheader("Este é um subtítulo")
+
+st.write("Olá! Você está convidado para o nosso chá de casa nova. Por favor, preencha as informações abaixo.")
+st.write("A sua presença é muito importante para nós!")
+st.write("Agradecemos desde já!")
+st.write("Abaixo estão algumas informações sobre o evento.")
+st.write("Por favor, preencha seu nome e escolha se irá ao evento.")
+st.write("Qualque duvida, entre em contato com a gente!")
 
 # Nome do usuário
 nome_usuario = st.text_input("Digite seu nome completo:", key="nome")
@@ -26,10 +34,10 @@ quantidade = 0
 # Se o usuário for ao evento, exibe mais informações sobre o evento
 if vai_ao_evento == "Sim":
     st.subheader("Detalhes do evento")
-    st.write("Local: Rua das Flores, 123")
-    st.write("Endereço: Casa da Joana")
-    st.write("Horário: 15:00h")
-    st.write("Data: 15 de Maio de 2025")
+    st.write("Local: Av. Dimas Machado, 164 - Chácaras Tubalina e Quartel")
+    st.write("Endereço: Residencial Pallace Planalto")
+    st.write("Horário: Á definir")
+    st.write("Data: Á definir")
 
 if nome_usuario and vai_ao_evento:
     if vai_ao_evento == "Sim":
