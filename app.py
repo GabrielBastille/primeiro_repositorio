@@ -14,7 +14,6 @@ HEADERS = {
 }
 
 st.title("Chá de Casa Nova 🎁🏠")
-st.subheader("Este é um subtítulo")
 
 st.write("Olá! Você está convidado para o nosso chá de casa nova. Por favor, preencha as informações abaixo.")
 st.write("A sua presença é muito importante para nós!")
